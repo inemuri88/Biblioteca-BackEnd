@@ -1,7 +1,7 @@
-package it.francesco.biblioteca.converter;
+package it.francesco.biblioteca.Biblioteca.converter;
 
-import it.francesco.biblioteca.dto.LibroDTO;
-import it.francesco.biblioteca.entity.Libro;
+import it.francesco.biblioteca.Biblioteca.dto.LibroDTO;
+import it.francesco.biblioteca.Biblioteca.entity.Libro;
 import org.springframework.stereotype.Component;
 
 @Component

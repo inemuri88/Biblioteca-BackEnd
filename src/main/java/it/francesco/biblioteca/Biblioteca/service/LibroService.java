@@ -1,4 +1,4 @@
-package it.francesco.biblioteca.service;
+package it.francesco.biblioteca.Biblioteca.service;
 
 import org.springframework.stereotype.Service;
 

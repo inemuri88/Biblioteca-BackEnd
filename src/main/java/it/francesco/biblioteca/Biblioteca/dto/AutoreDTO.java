@@ -1,4 +1,4 @@
-package it.francesco.biblioteca.dto;
+package it.francesco.biblioteca.Biblioteca.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,5 +16,5 @@ public class AutoreDTO {
 
     private String cognome;
 
-    private String nazionalita;
+
 }

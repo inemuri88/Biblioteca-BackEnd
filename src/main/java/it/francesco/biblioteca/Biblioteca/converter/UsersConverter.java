@@ -1,7 +1,7 @@
-package it.francesco.biblioteca.converter;
+package it.francesco.biblioteca.Biblioteca.converter;
 
-import it.francesco.biblioteca.dto.UsersDTO;
-import it.francesco.biblioteca.entity.Users;
+import it.francesco.biblioteca.Biblioteca.dto.UsersDTO;
+import it.francesco.biblioteca.Biblioteca.entity.Users;
 import org.springframework.stereotype.Component;
 
 @Component

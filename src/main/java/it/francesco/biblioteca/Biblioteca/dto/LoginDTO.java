@@ -1,11 +1,9 @@
-package it.francesco.biblioteca.dto;
+package it.francesco.biblioteca.Biblioteca.dto;
 
 import lombok.Data;
 
 @Data
-public class UsersDTO {
-
-    private Long id;
+public class LoginDTO {
 
     private String username;
 

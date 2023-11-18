@@ -1,4 +1,4 @@
-package it.francesco.biblioteca.dto;
+package it.francesco.biblioteca.Biblioteca.dto;
 
 import jakarta.persistence.Basic;
 import lombok.Data;

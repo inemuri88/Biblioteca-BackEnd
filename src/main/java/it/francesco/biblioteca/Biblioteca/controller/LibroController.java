@@ -1,9 +1,9 @@
-package it.francesco.biblioteca.controller;
+package it.francesco.biblioteca.Biblioteca.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/libro")
+public class LibroController {
 }
