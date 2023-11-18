@@ -14,10 +14,13 @@ public class Libro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Basic(optional = false)
     private String titolo;
 
+    @Basic(optional = false)
     private String casaEditrice;
 
+    @Basic(optional = true)
     private String isbn;
 
     @Basic(optional = true)

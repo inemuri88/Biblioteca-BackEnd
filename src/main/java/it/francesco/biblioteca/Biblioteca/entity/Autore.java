@@ -17,8 +17,10 @@ public class Autore {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Basic(optional = false)
     private String nome;
 
+    @Basic(optional = false)
     private String cognome;
 
     @ManyToMany

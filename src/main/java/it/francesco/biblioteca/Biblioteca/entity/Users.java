@@ -14,8 +14,10 @@ public class Users {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Basic(optional = false)
     private String username;
 
+    @Basic(optional = false)
     private String password;
 
     @ManyToMany
