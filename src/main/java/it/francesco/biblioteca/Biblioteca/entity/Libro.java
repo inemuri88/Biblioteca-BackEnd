@@ -32,4 +32,6 @@ public class Libro {
     @ManyToMany(mappedBy = "libri")
     private Set<Autore> autore;
 
+    private String genere;
+
 }
