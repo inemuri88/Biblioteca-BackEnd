@@ -37,7 +37,7 @@ public class AutoreController {
         }
     }
 
-    @DeleteMapping("eliminaAutore")
+    @DeleteMapping("/eliminaAutore")
     public void eliminaAutore(@RequestBody AutoreDTO autoreDTO){
         service.eliminazioneAutore(autoreDTO);
     }
