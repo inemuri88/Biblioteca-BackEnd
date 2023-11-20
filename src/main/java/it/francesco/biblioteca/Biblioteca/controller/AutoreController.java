@@ -36,4 +36,9 @@ public class AutoreController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Errore durante la registrazione dell'autore");
         }
     }
+
+    @DeleteMapping("eliminaAutore")
+    public void eliminaAutore(@RequestBody AutoreDTO autoreDTO){
+        service.eliminazioneAutore(autoreDTO);
+    }
 }

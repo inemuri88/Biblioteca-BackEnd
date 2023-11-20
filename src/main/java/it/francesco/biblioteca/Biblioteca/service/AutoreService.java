@@ -32,4 +32,8 @@ public class AutoreService {
         autoreRepository.save(converter.convertToEntity(autoreDTO));
     }
 
+    public void eliminazioneAutore(AutoreDTO autoreDTO){
+        autoreRepository.delete(converter.convertToEntity(autoreDTO));
+    }
+
 }
