@@ -24,6 +24,9 @@ public class AutoreController {
         return service.getAll();
     }
 
+    /*
+    Inserisce l'autore nel db e rimanda lo status dell'operazione
+     */
     @PostMapping("/RegistrazioneAutore")
     public ResponseEntity<?> registrazione(@RequestBody AutoreDTO autoreDTO){
         try {

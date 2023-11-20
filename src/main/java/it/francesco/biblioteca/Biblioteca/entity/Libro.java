@@ -26,8 +26,9 @@ public class Libro {
     @Basic(optional = true)
     private String prestito;
 
-    @ManyToMany(mappedBy = "libri")
-    private Set<Users> utenti;
+    @ManyToOne
+    @JoinColumn(name = "utente_id")
+    private Users utente;
 
     @ManyToMany(mappedBy = "libri")
     private Set<Autore> autore;

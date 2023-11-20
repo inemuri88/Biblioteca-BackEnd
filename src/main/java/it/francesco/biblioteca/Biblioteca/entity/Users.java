@@ -6,6 +6,7 @@ import lombok.*;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -28,13 +29,8 @@ public class Users {
     @Basic(optional = false)
     private String password;
 
-    @ManyToMany
-    @JoinTable(
-            name = "utente_libro",
-            joinColumns = @JoinColumn(name = "utente_id"),
-            inverseJoinColumns = @JoinColumn(name = "libro_id"))
-    @Basic(optional = true)
-    private Set<Libro> libri;
+    @OneToMany(mappedBy = "utente", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Libro> libri = new HashSet<>();
 
 
 
