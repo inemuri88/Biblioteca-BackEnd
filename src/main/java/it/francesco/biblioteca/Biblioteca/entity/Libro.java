@@ -1,13 +1,17 @@
 package it.francesco.biblioteca.Biblioteca.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Set;
 
 @Entity
 @Data
 @Table(name = "LIBRO")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Libro {
 
     @Id

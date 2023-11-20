@@ -27,7 +27,7 @@ public class AutoreService {
         return converter.convertToListDTO(autoreRepository.findAll());
     }
 
-    public void registrazioneAutore(@RequestBody AutoreDTO autoreDTO){
+    public void registrazioneAutore(AutoreDTO autoreDTO){
 
         autoreRepository.save(converter.convertToEntity(autoreDTO));
     }
