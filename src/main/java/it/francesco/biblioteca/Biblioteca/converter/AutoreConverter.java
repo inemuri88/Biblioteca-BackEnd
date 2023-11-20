@@ -11,12 +11,12 @@ public class AutoreConverter extends AbstractConverter<AutoreDTO, Autore>{
     @Override
     public Autore convertToEntity(AutoreDTO autoreDTO) {
 
-        return new Autore(autoreDTO.getId(), autoreDTO.getNome(), autoreDTO.getCognome());
+        return new Autore(autoreDTO.getId(), autoreDTO.getNome(), autoreDTO.getCognome(), autoreDTO.getLibri());
     }
 
     @Override
     public AutoreDTO convertToDTO(Autore autore) {
 
-        return new AutoreDTO(autore.getId(), autore.getNome(), autore.getCognome());
+        return new AutoreDTO(autore.getId(), autore.getNome(), autore.getCognome(), autore.getLibri());
     }
 }

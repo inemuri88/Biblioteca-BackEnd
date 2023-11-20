@@ -30,6 +30,6 @@ public class Libro {
     private Set<Users> utenti;
 
     @ManyToMany(mappedBy = "libri")
-    private Autore autore;
+    private Set<Autore> autore;
 
 }

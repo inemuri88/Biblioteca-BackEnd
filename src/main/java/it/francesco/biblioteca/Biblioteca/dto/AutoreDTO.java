@@ -1,8 +1,11 @@
 package it.francesco.biblioteca.Biblioteca.dto;
 
+import it.francesco.biblioteca.Biblioteca.entity.Libro;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Set;
 
 
 @Data
@@ -16,5 +19,5 @@ public class AutoreDTO {
 
     private String cognome;
 
-
+    private Set<Libro> libri;
 }

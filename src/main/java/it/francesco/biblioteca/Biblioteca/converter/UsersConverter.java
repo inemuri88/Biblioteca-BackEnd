@@ -8,11 +8,13 @@ import org.springframework.stereotype.Component;
 public class UsersConverter extends AbstractConverter<UsersDTO, Users>{
     @Override
     public Users convertToEntity(UsersDTO usersDTO) {
-        return null;
+
+        return new Users(usersDTO.getId(), usersDTO.getUsername(), usersDTO.getPassword(), usersDTO.getLibri());
     }
 
     @Override
     public UsersDTO convertToDTO(Users users) {
-        return null;
+
+        return new UsersDTO(users.getId(), users.getUsername(), users.getPassword(), users.getLibri());
     }
 }
