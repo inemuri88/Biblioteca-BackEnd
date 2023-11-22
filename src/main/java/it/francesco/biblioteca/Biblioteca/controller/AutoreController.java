@@ -41,4 +41,9 @@ public class AutoreController {
     public void eliminaAutore(@RequestBody AutoreDTO autoreDTO){
         service.eliminazioneAutore(autoreDTO);
     }
+
+    @PutMapping("/modificaAutore")
+    public void modificaAutore(@RequestBody AutoreDTO autoreDTO){
+
+    }
 }
